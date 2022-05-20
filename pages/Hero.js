@@ -1,12 +1,25 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useRef } from 'react';
 import { BiRightArrow } from 'react-icons/bi';
 import Typical from 'react-typical'
+import { scroller } from "react-scroll";
+
 
 const Home = () => {
 
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
+  const myRef = useRef('/projects')
   const router = useRouter();
+
+  const scrollToSection = () => {
+    scroller.scrollTo("projects", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
+
+
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
       {/* Container */}
@@ -30,11 +43,13 @@ const Home = () => {
 
         ]}></Typical>
             
-            <li>
-            <Link href='/projects' to='projects' smooth={true} duration={500}>
-            Projects
-          </Link>
-            </li>
+          <button onClick={scrollToSection} 
+          className=' rounded text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-green-400 hover:border-green-400'>
+           View Projects
+            <span className='group-hover:rotate-90 duration-300'>
+              <BiRightArrow />
+            </span>
+          </button>
         </div>
       </div>
       
