@@ -24,7 +24,7 @@ export default function Published() {
     
     return (<div>
 
-        <div name='projects' className='sm:p-10  w-full h-screen bg-[#0a192f] text-gray-300'>
+        <div name='published' className='sm:p-10  w-full h-screen bg-[#0a192f] text-gray-300'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
           <div>
               <p className='rounded-lg text-4xl font-bold inline border-b-4 border-green-400 mb-10'>Published</p>
