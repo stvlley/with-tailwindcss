@@ -37,8 +37,8 @@ export default function Skills() {
                   <p className='my-4'>TAILWIND</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md bg-[#0e2343] shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image src="/prisma.svg" alt="MongoDB Logo" width={72} height={50} />
-                  <p className='my-4'>PRISMA</p>
+              <Image src="/mongodb.svg" alt="MongoDB Logo" width={72} height={50} />
+                  <p className='my-4'>MONGODB</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md bg-[#0e2343] shadow-[#040c16] hover:scale-110 duration-500'>
               <Image src="/NextJS-Dark.svg" alt="Javascript Logo" width={72} height={50} />

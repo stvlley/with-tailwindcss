@@ -33,12 +33,12 @@ export default function Published() {
       
       
 
-          <div className='w-full  grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
+          <div className='mx-auto w-full  grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
              
               <div className='rounded-lg p-4 bg-[#0e2343] group shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
               {image[1]}
               {/* <Image src="/nextjs-dark.svg" alt="HTML Logo" width={300} height={300} /> */}
-                  <p className='my-4 text-2xl'>Sinatra or Rails: Ruby Backend Frameworks</p>
+                  <p className='flex-col mt-4 text-2xl'>Sinatra or Rails: Ruby Backend Frameworks</p>
                   <p>By Stephen Talley</p>
                   <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-1xl font-bold text-green-400 tracking-wider'>
