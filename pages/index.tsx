@@ -3,6 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './Navbar'
 import Hero from './Hero'
+import About from './About'
+import Skills from './Skills'
+import Projects from './Projects'
+import Published from './Published'
+import Contact from './Contact'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +18,11 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Published />
+      <Contact />
 
 
       
