@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
+import Logo from '/Users/stvlley/with-tailwindcss/public/st2.svg'
 
 // Navbar
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
     <div className='text-gray-300 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]'>
       {/* Logo */}
       <div>
-        <Image src='/st2.svg' alt="Stephen Talley Logo" width={100} height={75} />
+        <Image src={Logo} alt="Stephen Talley Logo" width={100} height={75} />
       </div>
 
       {/* Menu */}
@@ -108,7 +109,7 @@ export default function Navbar() {
           <li className='p-4 rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/contact'
+              
             >
             <Link to='contact' smooth={true} duration={500}>
           Email
