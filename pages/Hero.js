@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { BiRightArrow } from 'react-icons/bi';
@@ -29,13 +30,11 @@ const Home = () => {
 
         ]}></Typical>
             
-          <button onClick={() => router.push('/work')} 
-          className=' rounded text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-green-400 hover:border-green-400'>
-           View Projects
-            <span className='group-hover:rotate-90 duration-300'>
-              <BiRightArrow />
-            </span>
-          </button>
+            <li>
+            <Link href='/projects' to='projects' smooth={true} duration={500}>
+            Projects
+          </Link>
+            </li>
         </div>
       </div>
       
