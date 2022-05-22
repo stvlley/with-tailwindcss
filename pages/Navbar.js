@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
-import Logo from '/Users/stvlley/with-tailwindcss/public/st2.svg'
+// import Logo from '/Users/stvlley/with-tailwindcss/public/st3.png'
 
 // Navbar
 export default function Navbar() {
@@ -16,7 +16,10 @@ export default function Navbar() {
     <div className='text-gray-300 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]'>
       {/* Logo */}
       <div>
-        <Image src={Logo} alt="Stephen Talley Logo" width={100} height={75} />
+      <h1 className='hover:animate-bounce text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+          ST.
+        </h1>  
+        {/* <Image src={Logo} alt="Stephen Talley Logo" width={100} height={75} /> */}
       </div>
 
       {/* Menu */}
