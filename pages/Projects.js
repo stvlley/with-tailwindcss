@@ -14,7 +14,7 @@ export default function Projects() {
           <div className='w-full  grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
              
               <div className='content-div rounded-lg p-3 bg-[#0e2343] group shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image src="/react-dark.svg" alt="HTML Logo" width={300} height={300} />
+              <Image src="/filler.png" alt="HTML Logo" width={300} height={300} />
                   <p className='my-4'>NextJS / MongoDB </p>
 
                   <div className='opacity-0 group-hover:opacity-100'>
@@ -33,7 +33,7 @@ export default function Projects() {
                     </div>
               </div>
               <div className='content-div rounded-lg p-3 bg-[#0e2343] group shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image src="/react-dark.svg" alt="HTML Logo" width={300} height={300} />
+              <Image src="/filler.png" alt="HTML Logo" width={300} height={300} />
                   <p className='my-4'>HTML</p>
 
                   <div className='opacity-0 group-hover:opacity-100'>
@@ -52,7 +52,7 @@ export default function Projects() {
                     </div>
               </div>
               <div className='content-div rounded-lg p-3 bg-[#0e2343]  group shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image src="/react-dark.svg" alt="HTML Logo" width={300} height={300} />
+              <Image src="/filler.png" alt="HTML Logo" width={300} height={300} />
                   <p className='my-4'>HTML</p>
 
                   <div className='opacity-0 group-hover:opacity-100'>
