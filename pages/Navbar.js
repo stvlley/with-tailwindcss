@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
-// import Logo from '/Users/stvlley/with-tailwindcss/public/st3.png'
+import Logo from '/public/logo.png'
 
 // Navbar
 export default function Navbar() {
@@ -13,43 +13,42 @@ export default function Navbar() {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='text-gray-300 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]'>
+    <div className='font-extralight text-gray-300 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]'>
       {/* Logo */}
       <div>
-      <h1 className='hover:animate-bounce text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
-          ST.
-        </h1>  
-        {/* <Image src={Logo} alt="Stephen Talley Logo" width={100} height={75} /> */}
+      <p className='hover:scale-110 duration-500 text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+        <Image src={Logo} alt="Stephen Talley Logo" width={100} height={75} />
+      </p>  
       </div>
 
       {/* Menu */}
-      <ul className=' hidden md:flex'>
-        <li>
+      <ul className=' hidden md:flex '>
+        <li className='hover:animate-bounce '>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className='hover:animate-bounce '>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className='hover:animate-bounce '>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className='hover:animate-bounce '>
           <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li>
+        <li className='hover:animate-bounce '>
           <Link to='published' smooth={true} duration={500}>
             Published
           </Link>
         </li>
-        <li>
+        <li className='hover:animate-bounce '>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
@@ -60,7 +59,7 @@ export default function Navbar() {
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* Mobile Menu */}
-      <ul  className={!nav ? 'hidden' : ' absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+      <ul  className={!nav ? 'hidden' : ' absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center font-extralight'}>
         <li className='py-6 text-4xl'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
@@ -89,12 +88,17 @@ export default function Navbar() {
         <li className='py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           Contact
         </Link></li>
+        <li className='rounded-full font-semibold bg-green-500 py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          RESUME
+        </Link></li>
       </ul>
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='p-4 rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
+            target="_blank"
+            rel="noopener noreferrer"
               className=' flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/stephen-talley-the-developer/'
             >
@@ -103,6 +107,8 @@ export default function Navbar() {
           </li>
           <li className='p-4 rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
+            target="_blank"
+            rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
               href='https://github.com/stvlley'
             >
@@ -122,6 +128,8 @@ export default function Navbar() {
           </li>
           <li className='p-4 rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
             <a
+            target="_blank"
+            rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
               href='https://drive.google.com/file/d/1XrOxs7MHUBUWF5JHcsiU9xSEJ8r3RDBs/view?usp=sharing'
             >

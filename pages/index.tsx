@@ -8,10 +8,16 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Published from './Published'
 import Contact from './Contact'
+import Work from './Work'
+import Blogs from './Blogs'
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
+
+ 
+
   return (
-    <div >
+    <div className='cursor-cell bg-[#0a192f]'>
       <Head>
         <title>Stephen Talley</title>
         <link rel="icon" href="/st2.svg" />
@@ -20,7 +26,9 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <Work />
+      {/* <Blogs /> */}
+     {/* <Projects /> */}
       <Published />
       <Contact />
 
