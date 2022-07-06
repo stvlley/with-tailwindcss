@@ -1,12 +1,11 @@
 import { Element } from 'react-scroll'
 import React from 'react'
 import Image from 'next/image'
-import Filler from '../public/filler.png'
 import Gif from '../public/project1.gif'
 import Logo from '/public/DFH.png'
 import Logo2 from '/public/Sabertech.png'
 import Logo3 from '/public/eastcoast.png'
-import Async from '../public/async.gif'
+import FineLine from '../public/fineline.gif'
 import Ecfc from '../public/eastco.gif'
 
 
@@ -20,6 +19,65 @@ export default function Work() {
                 </div>
                 <div className='  md:flex sm:flex-col md:flex-row justify-center items-center gap-10 mt-10 '>
 
+                    <div className='shadow-[#7a7a7a] bg-[#0e2343] content-div rounded-lg p-3  group shadow-md hover:scale-110 duration-500' >
+
+                        <div className=' items-center justify-center m-auto text-white'>
+                            <Image src={Logo2} alt="DFH Logo" width={200} height={175} />
+                        </div>
+
+                        <div className='m-5 duration-500  w-80 h-60  relative'>
+
+                            {/* GIF */}
+                            <Image src={FineLine} priority alt="async chat" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
+                            {/* Hover */}
+
+
+
+                        </div>
+
+                        <div className='p-1'>
+                                <div className="text-[#15325f] py-1 px-3   rounded-full bg-white">
+                                    <p className="text-2x text-center font-bold ">NextJS </p>
+                                </div>
+                            </div>
+                            
+                            <div className='p-1'>
+                                <div className="text-[#15325f]  py-1 px-2 rounded-full bg-white">
+                                    <p className="text-2x text-center font-bold ">TailwindCSS </p>
+                                </div>
+                            </div>
+
+                            <div className='p-1'>
+                                <div className="text-[#15325f] py-1 px-2 rounded-full bg-white">
+                                    <p className="text-2x text-center font-bold ">GraphQL </p>
+                                </div>
+                            </div>
+
+                            <div className='p-1'>
+                                <div className="py-1 px-2 text-[#15325f]  rounded-3xl bg-white">
+                                    <p className="text-2x text-center font-bold ">Lives are lived in grey areas and true value lies on the Fine Line. At Fine Line we welcome every opnion and perspective that holds true insight and value. Fine Line is place to come and debate the finer points in Tech, Fashion, and more.</p>
+                                </div>
+                            </div>
+                            
+                        <div className='flex opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white '>
+                                <h2>Fine Line</h2> 
+                                <h6 className='text-sm'>Keep the content coming!</h6> 
+                            </span>
+                          
+                            <div className='pt-8 '>
+
+                                <a href='https://next-blog-five-navy-21.vercel.app/category/webdev'>
+                                    <button className='font-mono bg-[#15325f]  text-center rounded-lg px-4 py-3 m-2  text-gray-300  text-lg hover:scale-110 duration-500'>live</button>
+                                </a>
+                                <a href='https://github.com/stvlley/digital-boutique'>
+                                    <button className='font-mono bg-[#15325f]  text-center rounded-lg px-4 py-3 m-2  text-gray-300  text-lg hover:scale-110 duration-500'>code</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
                     <div className='shadow-[#7a7a7a] bg-[#0e2343] shadow-md content-div rounded-lg p-3  group  hover:scale-110 duration-500'>
 
                         <div>
@@ -33,7 +91,7 @@ export default function Work() {
                             <div className='m-5 duration-500  w-80 h-60  relative'>
 
                                 {/* GIF */}
-                                <Image src={Gif} alt="project one" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
+                                <Image src={Gif} priority alt="Digital Fashion House" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
                                 {/* Hover */}
 
 
@@ -81,62 +139,6 @@ export default function Work() {
 
 
                     </div>
-                    <div className='shadow-[#7a7a7a] bg-[#0e2343] content-div rounded-lg p-3  group shadow-md hover:scale-110 duration-500' >
-
-                        <div className=' items-center justify-center m-auto text-white'>
-                            <Image src={Logo2} alt="DFH Logo" width={200} height={175} />
-                        </div>
-
-                        <div className='m-5 duration-500  w-80 h-60  relative'>
-
-                            {/* GIF */}
-                            <Image src={Async} alt="project one" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
-                            {/* Hover */}
-
-
-
-                        </div>
-
-                        <div className='p-1'>
-                                <div className="text-[#15325f] py-1 px-3   rounded-full bg-white">
-                                    <p className="text-2x text-center font-bold ">NextJS </p>
-                                </div>
-                            </div>
-                            
-                            <div className='p-1'>
-                                <div className="text-[#15325f]  py-1 px-2 rounded-full bg-white">
-                                    <p className="text-2x text-center font-bold ">TailwindCSS </p>
-                                </div>
-                            </div>
-
-                            <div className='p-1'>
-                                <div className="text-[#15325f] py-1 px-2 rounded-full bg-white">
-                                    <p className="text-2x text-center font-bold ">Supabase </p>
-                                </div>
-                            </div>
-
-                            <div className='p-1'>
-                                <div className="py-1 px-2 text-[#15325f]  rounded-3xl bg-white">
-                                    <p className="text-2x text-center font-bold ">Nobody really wants to talk to their project manager or feel the pressure of having to reply immediately while your stuck in the code base. Luckily we can just Async Chat. Leave communications open through-out the work day with Async Chat.</p>
-                                </div>
-                            </div>
-                            
-                        <div className='flex opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white '>
-                                <h2>Async Chat</h2> 
-                                <h6 className='text-sm'>Because I Don't Want To Talk To You.</h6> 
-                            </span>
-                          
-                            <div className='pt-8 '>
-
-                                <a href='https://github.com/stvlley/digital-boutique'>
-                                    <button className='font-mono bg-[#15325f]  text-center rounded-lg px-4 py-3 m-2  text-gray-300  text-lg hover:scale-110 duration-500'>code</button>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
                     <div className='shadow-[#7a7a7a]  bg-[#0e2343] content-div rounded-lg p-3  group shadow-md hover:scale-110 duration-500'>
 
 
@@ -147,7 +149,7 @@ export default function Work() {
                         <div className='m-5 duration-500  w-80 h-60  relative'>
 
                             {/* GIF */}
-                            <Image src={Ecfc} alt="project one" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
+                            <Image src={Ecfc} priority alt="east coast fishiing co" layout="fill" objectFit='cover' className=' rounded-lg cursor-pointer ' />
                             {/* Hover */}
 
 

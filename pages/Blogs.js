@@ -1,7 +1,7 @@
 import { Element } from 'react-scroll'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import Filler from '../public/filler.png'
+
 import Gif from '../public/project1.gif'
 import Logo from '/public/DFH.png'
 import axios from "axios";
