@@ -67,10 +67,10 @@ export default function Work() {
                           
                             <div className='pt-8 '>
 
-                                <a href='https://next-blog-five-navy-21.vercel.app/category/webdev'>
+                                <a href='https://next-blog-five-navy-21.vercel.app'>
                                     <button className='font-mono bg-[#15325f]  text-center rounded-lg px-4 py-3 m-2  text-gray-300  text-lg hover:scale-110 duration-500'>live</button>
                                 </a>
-                                <a href='https://github.com/stvlley/digital-boutique'>
+                                <a href='https://github.com/stvlley/next-blog'>
                                     <button className='font-mono bg-[#15325f]  text-center rounded-lg px-4 py-3 m-2  text-gray-300  text-lg hover:scale-110 duration-500'>code</button>
                                 </a>
                             </div>
