@@ -88,9 +88,14 @@ export default function Navbar() {
         <li className='py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
           Contact
         </Link></li>
-        <li className='rounded-full font-semibold bg-green-500 py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-          RESUME
-        </Link></li>
+        <li className='rounded-full font-semibold bg-green-500 py-6 text-4xl'>
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://drive.google.com/file/d/1a4ZzyhM7bPW9lqxuVvS0JAyiNB_YMRDh/view?usp=sharing'
+            >RESUME</a>
+        </li>
       </ul>
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
@@ -131,7 +136,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://drive.google.com/file/d/1XrOxs7MHUBUWF5JHcsiU9xSEJ8r3RDBs/view?usp=sharing'
+              href='https://drive.google.com/file/d/1a4ZzyhM7bPW9lqxuVvS0JAyiNB_YMRDh/view?usp=sharing'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
