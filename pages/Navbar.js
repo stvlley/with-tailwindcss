@@ -93,7 +93,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://drive.google.com/file/d/1a4ZzyhM7bPW9lqxuVvS0JAyiNB_YMRDh/view?usp=sharing'
+              href='https://drive.google.com/file/d/1dqgJ1e0UvCjaWArJFzxDVN38qDSvMZwx/view?usp=sharing'
             >RESUME</a>
         </li>
       </ul>
@@ -136,7 +136,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://drive.google.com/file/d/1a4ZzyhM7bPW9lqxuVvS0JAyiNB_YMRDh/view?usp=sharing'
+              href='https://drive.google.com/file/d/1dqgJ1e0UvCjaWArJFzxDVN38qDSvMZwx/view?usp=sharing'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
